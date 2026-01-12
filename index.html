@@ -1,16 +1,68 @@
-<h1>IRON MAN IS COMING SOON</h1>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IRON MAN IS COMING SOON</title>
+    <style>
+      body{
+        margin:0;
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:#0b1633; /* bleu nocturne */
+        color:white;
+        font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      }
+      .wrap{
+        width:min(900px,92vw);
+        text-align:center;
+        padding:48px 16px;
+      }
+      h1{
+        margin:0 0 24px;
+        font-size:clamp(28px,5vw,56px);
+        letter-spacing:0.06em;
+        text-transform:uppercase;
+      }
+      .stack{
+        display:flex;
+        flex-direction:column;
+        gap:18px; /* espace entre les images */
+        align-items:center;
+      }
+      .stack img{
+        display:block;
+        width:min(720px,100%);
+        height:auto;
+        border-radius:16px;
+        background:rgba(255,255,255,0.06);
+        box-shadow:0 10px 30px rgba(0,0,0,0.35);
+      }
+      .hint{
+        margin-top:14px;
+        font-size:14px;
+        opacity:0.75;
+      }
+    </style>
+  </head>
 
-<div class="media">
-  <img src="iron%20man.gif" alt="Iron Man GIF" />
-  <img src="iron%20man.jpg" alt="Image en dessous" />
-</div>
+  <body>
+    <main class="wrap">
+      <h1>IRON MAN IS COMING SOON</h1>
 
-<style>
-  .media img{
-    display:block;
-    max-width:700px;
-    width:100%;
-    height:auto;
-    margin:16px auto;
-  }
-</style>
+      <div class="stack">
+        <!-- GIF -->
+        <img src="iron%20man.gif" alt="Iron Man GIF" />
+
+        <!-- 2e image : remplace par le vrai nom de ton fichier -->
+        <img src="iron%20man.jpg" alt="Deuxième image" />
+      </div>
+
+      <div class="hint">
+        Si la 2e image ne s’affiche pas, vérifie le nom exact (majuscules, extension) et qu’elle est dans le même dossier.
+      </div>
+    </main>
+  </body>
+</html>
